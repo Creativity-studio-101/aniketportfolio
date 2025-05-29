@@ -14,7 +14,7 @@
     <div class="container">
         <nav>
             <div class="logo-container">
-                <img src="assets/logo.svg" class="logo" alt="Aniket Mali Logo">
+                <img src="assets/AniketLogo.png" class="logo" alt="Aniket Mali Logo">
             </div>
             <ul class="nav-menu">
                 <li><a href="#header">Home</a></li>
@@ -22,6 +22,7 @@
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="assets/Aniket-CV.pdf" download target="_blank">Download CV</a></li>
             </ul>
         </nav>
         <div class="header-text">
@@ -39,11 +40,11 @@
             });
         </script>
         
-        <div class="hero-vid-box">
-            <div class="video-placeholder">
-                <i class="fas fa-play-circle"></i>
-                <p>Demo Video</p>
-            </div>
+        <div class="hero-vid-box ">
+            <video autoplay loop muted playsinline>
+                <source src="assets/hero-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </div>
 </header>
@@ -54,8 +55,9 @@
         <div class="row">
             <div class="about-col-1">
                 <div class="profile-image">
-                    <i class="fas fa-user-circle"></i>
+                  <img src="assets/Me2.jpg" class="my-image" alt="Aniket Mali Photo">
                 </div>
+                
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title-1">About Me</h1>
@@ -81,7 +83,7 @@
                             <span>Inbitech Solutions</span><br>
                             Clerk<br>
                             Sept-2018 to Mar-2020<br>
-                            <a href="#" class="pdf-button">
+                            <a href="assets/Inbitech.pdf" class="pdf-button" target="_blank">
                                 <i class="fa-solid fa-file-pdf"></i> <strong>View Experience Certificate</strong>
                             </a>
                         </li>
@@ -90,9 +92,9 @@
 
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>12th</span><br>Commerce<br>(68.31%)</li>
+                        <li><span>MBA</span><br>Business Analytics + Finance<br>(Pursuing)<br>Academic Performance: 63% (Till 3rd Semester)</li>
                         <li><span>B.com</span><br>Advanced Accountancy<br>(70.83%)</li>
-                        <li><span>MBA</span><br>Business Analytics + Finance<br>(Pursuing)</li>
+                        <li><span>12th</span><br>Commerce<br>(68.31%)</li>
                     </ul>
                 </div>
             </div>
@@ -108,12 +110,7 @@
 
             <!-- Excel Certification -->
             <div class="cert-card">
-                <div class="cert-image">
-                    <div class="cert-icon">
-                        <i class="fas fa-file-excel"></i>
-                        <span class="cert-provider">IBM</span>
-                    </div>
-                </div>
+                <img src="assets/IBM_Excel.png" class="cert-icon" alt="Excel Certification">
                 <div class="cert-content">
                     <h2>Excel Basics for Data Analysis</h2>
                     <div class="certificate-description">
@@ -123,18 +120,13 @@
                             <li>Skilled in analyzing data using filters, sorting, lookup functions, and pivot tables</li>
                         </ul>
                     </div>
-                    <a href="#" class="cert-link">View Certificate</a>
+                    <a href="assets/Excle.pdf" class="cert-link" target="_blank">View Certificate</a>
                 </div>
             </div>
 
             <!-- Digital Marketing Certification -->
             <div class="cert-card">
-                <div class="cert-image">
-                    <div class="cert-icon">
-                        <i class="fab fa-google"></i>
-                        <span class="cert-provider">Google</span>
-                    </div>
-                </div>
+                <img src="assets/Google_Digital.png" class="cert-icon" alt="Digital marketing Certification">
                 <div class="cert-content">
                     <h2>Foundations of Digital Marketing and E-commerce</h2>
                     <div class="certificate-description">
@@ -145,18 +137,13 @@
                             <li>Supports strategies using SEO, email, and social media</li>
                         </ul>
                     </div>
-                    <a href="#" class="cert-link">View Certificate</a>
+                    <a href="assets/Digital_Marketing.pdf" class="cert-link" target="_blank">View Certificate</a>
                 </div>
             </div>
 
             <!-- Generative AI Certification -->
             <div class="cert-card">
-                <div class="cert-image">
-                    <div class="cert-icon">
-                        <i class="fas fa-robot"></i>
-                        <span class="cert-provider">Google</span>
-                    </div>
-                </div>
+                <img src="assets/Google_ai.png" class="cert-icon" alt="GenAI Certification">
                 <div class="cert-content">
                     <h2>Generative AI</h2>
                     <div class="certificate-description">
@@ -167,7 +154,7 @@
                             <li>Familiar with real-world use cases and industry trends</li>
                         </ul>
                     </div>
-                    <a href="#" class="cert-link">View Certificate</a>
+                    <a href="assets/GenAI.pdf" class="cert-link" target="_blank">View Certificate</a>
                 </div>
             </div>
 
@@ -183,9 +170,7 @@
 
             <div class="project">
                 <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
+                    <img src="assets/portfolio_logo.jpg" class="project-image" alt="Portfolio Analyzer">
                     <div class="layer">
                         <h3>Portfolio Analyzer</h3>
                         <p>Web tool for Indian investors to track stocks, crypto, and mutual funds with SIP/SWP calculators, risk analysis, and asset allocation. Built with Flask and deployed on Render.</p>
@@ -199,9 +184,7 @@
 
             <div class="project">
                 <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-credit-card"></i>
-                    </div>
+                    <img src="assets/Credit.jpg" class="project-image" alt="Credit Prediction Model">
                     <div class="layer">
                         <h3>Credit Prediction Model</h3>
                         <p>ML model using Random Forest to predict credit eligibility based on income, loan history, and other financial factors.</p>
@@ -215,9 +198,7 @@
 
             <div class="project">
                 <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-database"></i>
-                    </div>
+                    <img src="assets/Ticker.jpg" class="project-image" alt="Web scrape(Ticker-Tape-Scraper)">
                     <div class="layer">
                         <h3>Ticker Tape Data Scraper</h3>
                         <p>Python script using Selenium and BeautifulSoup to scrape financial statements from Tickertape.in.</p>
@@ -243,11 +224,11 @@
                 <p><i class="fa-solid fa-paper-plane"></i>aniketa5497@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i> +91 7028577644</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/aniket-mali-907909280/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/aniket_a_mali/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aniket-mali-907909280/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/aniket_a_mali/"target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
                 </div>
-                <a href="#" download class="btn btn2">Download CV</a>
+                <a href="assets/Aniket-CV.pdf" download class="btn btn2" target="_blank">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
