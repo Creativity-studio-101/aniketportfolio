@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Mali - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c38c877901.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-------------Header-------------->
+<header id="header">
+    <div class="container">
+        <nav>
+            <div class="logo-container">
+                <img src="assets/logo.svg" class="logo" alt="Aniket Mali Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Aniket</span> Mali<br>From Kolhapur</h1>
+            <p class="typing"></p>
+        </div>
+        
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".typing", {
+                strings: ["Business Analyst", "Finance Professional", "Graphic Designer"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            });
+        </script>
+        
+        <div class="hero-vid-box">
+            <div class="video-placeholder">
+                <i class="fas fa-play-circle"></i>
+                <p>Demo Video</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <div class="profile-image">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title-1">About Me</h1>
+                <p class="aboutme">I'm Aniket Mali, an MBA graduate (Batch of 2025) specializing in Business Analytics & Finance from CSIBER Kolhapur. Passionate about leveraging data-driven insights for strategic decision-making, I have experience in financial modeling, risk analysis, data visualization, and predictive analytics. My expertise lies in analyzing key metrics, optimizing performance, and driving business efficiency through data. With hands-on experience in business analytics tools and financial modeling, I'm committed to delivering actionable insights that drive organizational success.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Power BI</span><br>Dashboard Designing</li>
+                        <li><span>Python</span><br>Data Analytics and Automation</li>
+                        <li><span>Microsoft Suite</span><br>Reporting and Presentation</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span>Inbitech Solutions</span><br>
+                            Clerk<br>
+                            Sept-2018 to Mar-2020<br>
+                            <a href="#" class="pdf-button">
+                                <i class="fa-solid fa-file-pdf"></i> <strong>View Experience Certificate</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>12th</span><br>Commerce<br>(68.31%)</li>
+                        <li><span>B.com</span><br>Advanced Accountancy<br>(70.83%)</li>
+                        <li><span>MBA</span><br>Business Analytics + Finance<br>(Pursuing)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Certifications -->
+<div id="certifications">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="certifications-list">
+
+            <!-- Excel Certification -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <div class="cert-icon">
+                        <i class="fas fa-file-excel"></i>
+                        <span class="cert-provider">IBM</span>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <h2>Excel Basics for Data Analysis</h2>
+                    <div class="certificate-description">
+                        <ul>
+                            <li>Proficient in basic Excel operations including navigation, data entry, and formulas</li>
+                            <li>Experienced in importing, cleaning, and managing datasets</li>
+                            <li>Skilled in analyzing data using filters, sorting, lookup functions, and pivot tables</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="cert-link">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Digital Marketing Certification -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                        <span class="cert-provider">Google</span>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <h2>Foundations of Digital Marketing and E-commerce</h2>
+                    <div class="certificate-description">
+                        <ul>
+                            <li>Understands digital marketing and e-commerce basics</li>
+                            <li>Skilled in setting up campaigns and tracking performance</li>
+                            <li>Knowledge of the marketing funnel stages</li>
+                            <li>Supports strategies using SEO, email, and social media</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="cert-link">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Generative AI Certification -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <div class="cert-icon">
+                        <i class="fas fa-robot"></i>
+                        <span class="cert-provider">Google</span>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <h2>Generative AI</h2>
+                    <div class="certificate-description">
+                        <ul>
+                            <li>Understands generative AI concepts and applications</li>
+                            <li>Explores tools like large language models and AI ethics</li>
+                            <li>Applies AI for text, image, and content generation tasks</li>
+                            <li>Familiar with real-world use cases and industry trends</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="cert-link">View Certificate</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div id="portfolio" class="projects-section">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+
+            <div class="project">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="layer">
+                        <h3>Portfolio Analyzer</h3>
+                        <p>Web tool for Indian investors to track stocks, crypto, and mutual funds with SIP/SWP calculators, risk analysis, and asset allocation. Built with Flask and deployed on Render.</p>
+                        <a href="https://portfolio-analyzer-2.onrender.com/" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-name">Portfolio Analyzer</h3>
+            </div>
+
+            <div class="project">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="layer">
+                        <h3>Credit Prediction Model</h3>
+                        <p>ML model using Random Forest to predict credit eligibility based on income, loan history, and other financial factors.</p>
+                        <a href="https://github.com/Creativity-studio-101/Credit_pridiction" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-name">Credit Prediction Model</h3>
+            </div>
+
+            <div class="project">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="layer">
+                        <h3>Ticker Tape Data Scraper</h3>
+                        <p>Python script using Selenium and BeautifulSoup to scrape financial statements from Tickertape.in.</p>
+                        <a href="https://github.com/Creativity-studio-101/Ticker-Tape-Scraper" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-name">Ticker Tape Data Scraper</h3>
+            </div>
+
+        </div>
+        <a href="finance.html" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>aniketa5497@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 7028577644</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/aniket-mali-907909280/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/aniket_a_mali/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+                <a href="#" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="copyright">
+    <p>&copy; 2025 Aniket Mali. All Rights Reserved.</p>
+</div>
+<div class="country">
+    <p>INDIA</p>
+</div>
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxxsF7qSXW2X7KH5zPtfuhbIJmmLQK3DEeXRvmimJyV6-9I7rDcNy7agoB2icVaLuJt/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+})
+
+setTimeout(() => {
+    document.querySelector(".typing").classList.add("done");
+}, 3000);
+</script>
+
+</body>
+</html>

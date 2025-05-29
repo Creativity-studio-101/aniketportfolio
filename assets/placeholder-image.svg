@@ -1,0 +1,27 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d2d2d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="200" fill="url(#bgGradient)" rx="10"/>
+  
+  <!-- Border -->
+  <rect width="300" height="200" fill="none" stroke="#FCB72E" stroke-width="2" rx="10" opacity="0.3"/>
+  
+  <!-- Image Icon -->
+  <g transform="translate(150, 100)">
+    <circle r="30" fill="#FCB72E" opacity="0.2"/>
+    <path d="M-15,-10 L-15,10 L15,10 L15,-10 Z M-10,-5 L-10,5 L10,5 L10,-5 Z" 
+          fill="#FCB72E" opacity="0.6"/>
+    <circle cx="-5" cy="-2" r="2" fill="#FCB72E"/>
+    <path d="M-8,2 L-3,-3 L2,2 L8,-4 L8,5 L-8,5 Z" fill="#FCB72E"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="150" y="160" font-family="Poppins, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#FCB72E" opacity="0.8">Project Image</text>
+</svg>
