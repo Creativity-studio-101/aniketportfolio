@@ -125,7 +125,7 @@ nav {
 .my-image {
     width: 100%;
     border-radius: 20px;
-    margin-top: 300px;
+    margin-top: 80px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 .row {
@@ -139,17 +139,6 @@ nav {
 .about-col-1 {
     flex: 1;
     min-width: 300px;
-}
-
-.profile-image {
-    width: 100%;
-    height: 400px;
-    background: linear-gradient(135deg, #FCB72E 0%, #ff6b35 100%);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .profile-image i {
@@ -653,89 +642,478 @@ form button:hover {
     font-weight: 600;
     letter-spacing: 2px;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px 5%;
-    }
-    
-    .nav-menu {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 20px;
-    }
-    
-    .header-text {
-        margin-top: 15%;
-    }
-    
-    .row {
-        flex-direction: column;
-        gap: 30px;
-    }
-    
-    .about-col-1, .about-col-2 {
-        min-width: auto;
-    }
-    
-    .tab-titles {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .certifications-list {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-list {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-card {
-        height: 250px;
-    }
-    
-    .contact-left, .contact-right {
-        min-width: auto;
-    }
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
 }
 
-@media (max-width: 480px) {
-    .header-text h1 {
-        font-size: 2rem;
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    border-radius: 2px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+/* --------------------------Show hamburger on mobile--------------------------- */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
     }
-    
-    .typing {
-        font-size: 1.2rem;
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #111;
+        padding: 20px 0;
     }
-    
-    .video-placeholder {
-        width: 250px;
-        height: 150px;
+
+    .nav-menu.show {
+        display: flex;
     }
-    
-    .video-placeholder i {
-        font-size: 2rem;
+
+    .nav-menu li {
+        text-align: center;
     }
-    
-    .profile-image {
-        height: 300px;
-    }
-    
-    .profile-image i {
-        font-size: 5rem;
-    }
-    
-    .sub-title-1, .sub-title {
-        font-size: 2rem;
-    }
-    
-    .cert-card {
-        min-height: 450px;
-    }
-    
-    .project-card {
-        height: 200px;
-    }
+
+    /* Header Styles */
+#header {
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    position: relative;
+    overflow: hidden;
+}
+.container {
+    padding: 10px 10%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/* Header Text */
+.header-text {
+    margin-top: 8%;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 25pt;
+}
+
+.header-text h1 span {
+    color: #FCB72E;
+}
+
+.typing {
+    display: inline-block;
+    color: #FCB72E;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 600;
+    min-height: 2.5rem;
+}
+
+/* Hero Video Box */
+.hero-vid-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.hero-vid-box video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+/* About Section */
+#about {
+    padding: 20px 0;
+    background: #111;
+}
+.my-image {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-image i {
+    font-size: 8rem;
+    color: white;
+}
+
+.about-col-2 {
+    flex: 1.5;
+    min-width: 100%;
+}
+
+.sub-title-1, .sub-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.aboutme {
+    font-size: 1.1rem;
+    color: #ccc;
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+/* Tab Navigation */
+.tab-titles {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.tab-links {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: medium;
+    position: relative;
+    color: #ccc;
+    transition: color 0.3s ease;
+    padding: 10px 0;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #FCB72E;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+}
+
+.tab-links.active-link {
+    color: #FCB72E;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+/* Certifications Section */
+#certifications {
+    padding: 20px 0;
+    background: #0a0a0a;
+}
+
+.certifications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.cert-card {
+    background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(252, 183, 46, 0.1);
+    min-height: 500px;
+    max-width: 95%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(252, 183, 46, 0.2);
+    border-color: #FCB72E;
+}
+
+.cert-image {
+    height: 200px;
+    background: linear-gradient(135deg, #FCB72E 0%, #ff6b35 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cert-icon {
+    text-align: center;
+}
+
+.cert-icon i {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.cert-provider {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.cert-content {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-content h2 {
+    font-size: 0rem;
+    color: #fff;
+    margin-bottom: 0px;
+    line-height: 1.4;
+}
+
+.certificate-description {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.certificate-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certificate-description li {
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+.certificate-description li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #FCB72E;
+    font-weight: bold;
+}
+
+.cert-link {
+    color: #FCB72E;
+    text-decoration: none;
+    font-weight: 600;
+    align-self: flex-start;
+    padding: 10px 0;
+    border-bottom: 10px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.cert-link:hover {
+    border-bottom-color: #FCB72E;
+}
+
+/* Projects Section */
+#portfolio {
+    padding: 20px 0;
+    background: #111;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.project {
+    text-align: center;
+}
+
+.project-card {
+    position: relative;
+    height: 300px;
+    width:300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+    border: 1px solid rgba(252, 183, 46, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: #FCB72E;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #FCB72E 0%, #ff6b35 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.project-image i {
+    font-size: 4rem;
+    color: white;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.5), #FCB72E);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.project-card:hover .layer {
+    height: 100%;
+}
+
+.layer h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.layer a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    color: #FCB72E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.layer a:hover {
+    background: #FCB72E;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.project-name {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin: 50px auto;
+    padding: 15px 40px;
+    background: transparent;
+    border: 2px solid #FCB72E;
+    border-radius: 30px;
+    color: #FCB72E;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #FCB72E;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(252, 183, 46, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

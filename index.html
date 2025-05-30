@@ -16,6 +16,12 @@
             <div class="logo-container">
                 <img src="assets/AniketLogo.png" class="logo" alt="Aniket Mali Logo">
             </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <ul class="nav-menu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -286,6 +292,12 @@ form.addEventListener('submit', e => {
 setTimeout(() => {
     document.querySelector(".typing").classList.add("done");
 }, 3000);
+</script>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('show');
+  }
 </script>
 
 </body>
